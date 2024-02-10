@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_page_color"
+    android:id="@+id/app_home_page"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_dark_color"
+        app:title="Admin"
+        app:titleTextAppearance="@style/title_text_appearance"
+        app:titleTextColor="@color/white" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/blankScreen_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/thinking"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Click + to create\nQuiz room"/>
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_anim"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="loading.json"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.80"
+        app:lottie_loop="true"
+        style="@style/ThemeOverlay.Material3.FloatingActionButton.Surface"
+        android:theme="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+        app:layout_anchorGravity="center"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add"
+        android:backgroundTint="@color/app_dark_color"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="75dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:maxImageSize="25dp"
+        app:shapeAppearance="@null"
+        app:layout_anchorGravity="top|end"
+        app:tint="@null"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_color_thin_transparent">#59D7D1E4</color>
+    <color name="grey">#808080</color>
+    <color name="yellow">#D8970F</color>
+    <color name="app_thin_color">#3A5795</color>
+    <color name="app_dark_color">#1D3672</color>
+    <color name="app_page_color">#7A87A6</color>
+    <color name="green">#B34CAF50</color>
+    <color name="red">#B3F6493C</color>
+</resources>
